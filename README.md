@@ -38,13 +38,6 @@ To trigger a game over certain conditions must be met. The player can either run
 This screen contains a restart button, a guide button, a leaderboard button, and a menu button. The restart button will reset the scene. The guide button shows safety tips for trucks.
 The leaderboard displays the top 10 players and their scores. The menu button returns the player to the main menu. The related code can be found in [Game Over UI](Assets/Scripts/GameOverUI.cs) and [Leaderboard](Assets/Scripts/Leaderboard.cs).
 
-# Main Menu
-The main menu is the starting point of the game and includes:
-- **Guide**: an educational overview of real-life truck blind spots, explaining where they are and why they are dangerous
-- **Tutorial**: instructions on how to play the game, including controls and objectives
-- **Start Game**: navigates the player into the city driving simulation
-- **Leaderboard**: an online ranking system to increase the replayability of the game
-
 # NPC Trucks/Cars
 To simulate traffic, random car prefabs spawn at designated location every 5 to 15 seconds. The car moves forward for 60 units. The related code could be found in [Simple Car Mover](Assets/Scripts/SimpleCarMover.cs) and [Simple Car Spawner](Assets/Scripts/SimpleCarSpawner.cs). The prefabs were imported from the Unity Asset store and the asset store page can be found [here](https://assetstore.unity.com/packages/3d/environments/simplepoly-city-low-poly-assets-58899).
 
@@ -52,14 +45,14 @@ To simulate traffic, random car prefabs spawn at designated location every 5 to 
 The game is played from first-person inside the truck cab or third-person perspective, making gaming experience feel immersive and true to real truck driving. The side mirrors consist of two plane game objects that reflect a camera placed behind the truck, giving the player a functional rear view. This design helps players understand and experience real-world truck blind spots firsthand. The related code can be found in Assets/Truck Stuff/Assets/MirrorPlane.cs.
 
 # Sound Effects
-Sound effects were addded to the truck and NPC cars to make the game feel more immersive. Related code can be found in [Simple Car Mover](Assets/Scripts/SimpleCarMover.cs) and Assets/Truck Stuff/Assets/Truck Controller.
+Sound effects were addded to the truck and NPC cars to make the game feel more immersive. Related code can be found in [Simple Car Mover](Assets/Scripts/SimpleCarMover.cs) and  [Truck Controller](Assets/Truck Stuff/Assets/Truck Controller.cs).
 
 # Warning System
 A warning system alerts the player when they run a red light. This gives players real-time feedback on unsafe driving behavior and counts toward the violation limit that triggers a game over. Related code can be found in [WarningTrigger](Assets/Scripts/WarningTrigger.cs).
 
 # Main Menu
 The main menu is a separate scene that exist as a hub of sorts. It contains the play button, that takes you to the main scene, a quit button, that exists the game, and a tutorial button, that displays the controls for the game. 
-In this scene you can also find a Truck Safety Guide button, that gives helpful tips aboout driving the truck, and a button that leads to the leaderboard. The related code can be found in [Main Menu UI](Assets/Scripts/MainMenuUI.cs) and [Leaderboard Button](Assets/Scripts/LeaderbooardButton.cs)
+In this scene you can also find a Truck Safety Guide button, that gives helpful tips aboout driving the truck, and a button that leads to the leaderboard. The related code can be found in [Main Menu UI](Assets/Scripts/MainMenuUi.cs) and [Leaderboard Button](Assets/Scripts/LeaderboardButton.cs)
 
 # Education Module
 The Educational Module is set to show whenever the main menu scene plays. It is there to help spread information about the dangers of being careless around trucks.
